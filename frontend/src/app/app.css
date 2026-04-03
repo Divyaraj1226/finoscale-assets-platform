@@ -1,0 +1,5 @@
+/* assets-table.component.css */
+.total-row {
+  font-weight: bold;
+  background-color: #f3f4f6; /* optional light gray for TOTAL row */
+}
