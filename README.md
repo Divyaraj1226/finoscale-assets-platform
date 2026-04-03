@@ -1,41 +1,50 @@
-# finoscale-assets-platform
-Full-stack NestJS + Angular assignment for Finoscale
-
 # Finoscale Assets Platform
 
 ## Overview
-Full-stack NestJS + Angular assignment to display and edit financial Assets data across multiple financial years.  
+This is a full-stack assignment built using **NestJS** (backend) and **Angular 21** (frontend) to display and edit financial assets data across multiple financial years.  
 
 - **Backend:** NestJS  
 - **Frontend:** Angular 21 + AG Grid  
-- **Data:** Financials.json (loaded at startup)
+- **Data:** `Financials.json` loaded at startup  
+
+---
 
 ## Features
-- Load financial assets from JSON
+- Load financial assets dynamically from JSON
 - Inline editing of asset values
-- Recalculate totals on backend
+- Recalculate totals in real-time
 - Dynamic table columns based on years
-- TOTAL row non-editable, bold
-- Right-aligned numeric values with 2 decimals
-- Error handling with notifications (Angular snackbar)
-- Loading skeleton and reactive signals for state
+- `TOTAL` row is **non-editable and bold**
+- Numeric values are **right-aligned** with 2 decimal places
+- Error handling with Angular **snackbar notifications**
+- Loading skeleton for better UX
+- Reactive signals for state management
+
+---
 
 ## Assumptions
-- Inline editing chosen for simplicity
-- TOTAL row is non-editable
-- Backend keeps JSON in memory; no DB persistence
-- JSON file is small enough to load in memory
+- Inline editing chosen for simplicity and clarity
+- Backend keeps JSON in memory (no database)
+- `TOTAL` row is read-only
+- JSON is small enough to be loaded entirely in memory
+- CORS configured only for `localhost:4200`
+
+---
 
 ## Not Implemented / Optional
 - Authentication / role-based access
-- DB persistence
+- Database persistence
 - Mobile responsiveness
-- Advanced filters / row pinning
+- Advanced AG Grid features like row pinning or column grouping
+
+---
 
 ## Known Limitations
-- Large JSON may slow backend
+- Large JSON files may slow backend response
 - Inline edits can be accidental (no modal confirmation)
-- CORS only allows localhost:4200
+- Backend error messages are basic and may need enhancements
+
+---
 
 ## Installation
 
